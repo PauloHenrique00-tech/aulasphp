@@ -43,7 +43,6 @@
 </head>
 <body>
     <h1>Arrays</h1>
-    <p>Palmeiras não tem Mundial</p>
 <?php
 
 $pessoa1 = [

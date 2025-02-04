@@ -6,7 +6,7 @@
     <title>PHP - Objetos</title>
 </head>
 <body>
-    <h1>Trabalhando com objetos genéricos</h1>
+    <h1> Trabalhando com objetos genéricos </h1>
     <hr>
 <?php
 /* Criando unmas instância de uma classe genérica chamada stdClass (Standar Class) */

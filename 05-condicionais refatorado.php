@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP - Condicionais</title>
+    <title>(VERSÃO 2) Estruturas Condicionais</title>
     <style>
         .comprar {
             color: red;
@@ -20,14 +20,14 @@
     </style>
     <hr>
 
-    <h2>Simples</h2>
+    <h2>Simples usando if</h2>
     <h3><code>if</code></h3>
 <?php
 $numero = 5;
 
 if($numero > 1){
 ?>
-    echo "<p>$numero é maior que 1</p>";
+    <p><?=$numero?> é maior que 1</p>
 <?php
 }
 ?>
@@ -57,7 +57,7 @@ if ($qtdEmEstoque < $qtdCrítica) {
 <!-- Verificar a idade de uma pessoa e determinar se ela é criança, adolescente, adulta ou idosa. -->    
 
 <?php
-$idade = 25;
+$idade = 65;
 if ($idade <= 12) {
     echo "<p>Criança 👼</p>";
 } elseif($idade <= 17) {

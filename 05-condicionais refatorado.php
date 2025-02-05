@@ -26,13 +26,11 @@
 $numero = 5;
 
 if($numero > 1){
-    echo "<p>$numero é maior que 1</p>";
-}
-
-// Sintaxe omitindo as chaves
-if($numero > 1) echo "<p>$numero é maior que 1</p>";
 ?>
-
+    echo "<p>$numero é maior que 1</p>";
+<?php
+}
+?>
     <hr>
     <h2>Composta usando <code>if/else</code></h2>
 <?php
@@ -59,7 +57,7 @@ if ($qtdEmEstoque < $qtdCrítica) {
 <!-- Verificar a idade de uma pessoa e determinar se ela é criança, adolescente, adulta ou idosa. -->    
 
 <?php
-$idade = 65;
+$idade = 25;
 if ($idade <= 12) {
     echo "<p>Criança 👼</p>";
 } elseif($idade <= 17) {

@@ -43,7 +43,7 @@ $qtdCrítica = 5; // mínimo necessário
 <h4>Quantidade em estoque: <?=$qtdEmEstoque?></h4>
 
 <?php
-if ($qtdEmEstoque < $qtdCrítica) {7/
+if ($qtdEmEstoque < $qtdCrítica) {
 ?>
     <p class="comprar">É necessário comprar!</p>
 

@@ -43,7 +43,7 @@ $qtdCrítica = 5; // mínimo necessário
 <h4>Quantidade em estoque: <?=$qtdEmEstoque?></h4>
 
 <?php
-if ($qtdEmEstoque < $qtdCritica) {
+if ($qtdEmEstoque < $qtdCrítica) {7/
 ?>
     <p class="comprar">É necessário comprar!</p>
 
@@ -67,16 +67,16 @@ if ($qtdEmEstoque < $qtdCritica) {
 <?php
 $idade = 65;
 if ($idade <= 12) {
-    echo "<p>Criança 👼</p>";
+    $texto = "Criança 👼";
 } elseif($idade <= 17) {
-    echo "<p>Adolescente 😠</p>";
+    $texto = "Adolescente 😠";
 } elseif($idade <= 59){
-    echo "<p>Adulto 🫨</p>";
+    $texto = "Adulto 🫨";
 } else {
-    echo "<p>Idoso 👴</p>";
+    $texto = "Idoso 👴";
 }
-
 ?>
+<p><?=$texto?></p>
 
 </body>
 </html>

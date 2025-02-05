@@ -24,7 +24,7 @@ if($compra > 5000) {
 
 ?>
 
-<p>O valor final é de: R$ <?= number_format($valorFinal)?></p>
+<p>O valor final é de: R$ <?= number_format($valorFinal, 2, ",", ".")?></p>
 
 
 </body>

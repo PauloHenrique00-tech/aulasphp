@@ -19,9 +19,24 @@ if($numero > 1){
 if($numero > 1) echo "<p>$numero é maior que 1</p>";
 ?>
 
-
+    <hr>
     <h2>Composta</h2>
+<?php
+$produto = "Ultrabook Asus";
+$qtdEmEstoque = 1; // o que temos
+$qtdCrítica = 5; // mínimo necessário
 
+echo "<h3>$produto</h3>";
+echo "<h4>Quantidade em estoque: $qtdEmEstoque</h4>";
+
+if ($qtdEmEstoque < $qtdCrítica) {
+    echo "<p>É necessário comprar!</p>";
+} else {
+    echo "<p>Estoque normal</p>";
+}
+
+?>
+    <hr>
     <h2>Encadeada</h2>
 
 </head>

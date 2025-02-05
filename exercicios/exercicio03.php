@@ -26,6 +26,8 @@ if($compra > 5000) {
 
 <p>O valor final é de: R$ <?= number_format($valorFinal, 2, ",", ".")?></p>
 
+<!--  <p>Foi dado um desconto de: <?=$desconto * 100?>% (<?=$compra - $valorFinal?>) </p> -->
+
 
 </body>
 </html>

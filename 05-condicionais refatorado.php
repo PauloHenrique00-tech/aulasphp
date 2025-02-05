@@ -70,42 +70,6 @@ if ($idade <= 12) {
     echo "<p>Idoso 👴</p>";
 }
 
-?><?php
-$idade = 65;
-if ($idade <= 12) {
-    echo "<p>Criança 👼</p>";
-} elseif($idade <= 17) {
-    echo "<p>Adolescente 😠</p>";
-} elseif($idade <= 59){
-    echo "<p>Adulto 🫨</p>";
-} else {
-    echo "<p>Idoso 👴</p>";
-}
-
-?><?php
-$idade = 65;
-if ($idade <= 12) {
-    echo "<p>Criança 👼</p>";
-} elseif($idade <= 17) {
-    echo "<p>Adolescente 😠</p>";
-} elseif($idade <= 59){
-    echo "<p>Adulto 🫨</p>";
-} else {
-    echo "<p>Idoso 👴</p>";
-}
-
-?><?php
-$idade = 65;
-if ($idade <= 12) {
-    echo "<p>Criança 👼</p>";
-} elseif($idade <= 17) {
-    echo "<p>Adolescente 😠</p>";
-} elseif($idade <= 59){
-    echo "<p>Adulto 🫨</p>";
-} else {
-    echo "<p>Idoso 👴</p>";
-}
-
 ?>
 </body>
 </html>

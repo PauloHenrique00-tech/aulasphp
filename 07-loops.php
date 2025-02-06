@@ -84,6 +84,7 @@ foreach ($meses as $mes) {
   }
 ?>
 
+
 <h3>Acessando array associativo</h3>
 <?php
 $clubes = [

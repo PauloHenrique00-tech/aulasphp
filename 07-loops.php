@@ -99,9 +99,19 @@ foreach($clubes as $clube => $apelido) {
 <?php     
 }
 ?>
-    
-<?php
 
+    <h3>Acessando objeto/ instância</h3>
+<?php
+$livro = new stdClass();
+$livro->título = "Senhor dos Anéis: A Sociedade do Anél";
+$livro->autor = "J.R.R. Tolkien";
+$livro->ano = 1954;
+
+foreach($livro as $propriedade => $valor){
+?>
+    <p> <?=$propriedade?>: <b><?=$valor?></b></p>
+<?php    
+}
 ?>
 
 </body>

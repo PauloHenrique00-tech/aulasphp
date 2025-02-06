@@ -52,5 +52,37 @@ for( $i = 1; $i <= 10; $i++ ){
 <?php
 }
 ?>
+
+<hr>
+
+<h2>Meses</h2>
+<h3>Acessando array indexado/numérico</h3>
+<?php
+
+$meses = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro"
+];
+?>
+
+<?php
+// (nomeDoArray as nomeDeVariavelDeAcesso)
+foreach ($meses as $mes) {
+?>   
+    <p>Mês: <?=$mes?></p>
+<?php    
+  }
+?>
+
 </body>
 </html>

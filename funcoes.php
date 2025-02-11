@@ -48,7 +48,7 @@ function somar($valor1, $valor2){
     o resultado do que ela fez. */
    //return $total;
 
-   // Podemos também aplicar o return direto nae xpressão (sem uso de variável local)
+   // Podemos também aplicar o return direto na expressão (sem uso de variável local)
    return $valor1 + $valor2;
 }    
 ?>
@@ -76,7 +76,7 @@ $resultado3 = somar(1250, 200)
 
         <h3>Função com parâmetros opcionais</h3>
 <?php
-/* Parâmetros opcionais possume lagum tipo de atribuição 
+/* Parâmetros opcionais possuem algum tipo de atribuição 
    com um valor alternativo para o caso de não serem passados na chamada 
    da função. Obs.: sempre devem estar por último na relação dos parâmetros da função. */
 function exibirSaudacao($mensagem, $pessoa = ""){

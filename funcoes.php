@@ -125,6 +125,17 @@ object -> objeto */
 
             <hr>
 
+            <h2>Função anônima (ou lambda)</h2>
+<?php
+$formatarPreco = function(float $valor):string {
+    $precoFormatado = "R$ ".number_format($valor, 2, ",",".");
+    return $precoFormatado;
+};
+?>
+        <p><?=$formatarPreco(1000)?></p>
+        <p><?=$formatarPreco(1500.88)?></p>
+        <p><?=$formatarPreco(10500.2598)?></p>
+        <p><?=$formatarPreco(-1098)?></p>
     </div>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

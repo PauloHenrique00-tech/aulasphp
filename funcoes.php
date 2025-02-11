@@ -16,13 +16,25 @@
 
 <?php
 function exibirDadosAutor(){
-    echo "<h3>Fulano de Tal</h3>";
+    echo "<h4>Fulano de Tal</h4>";
     echo "<p><time>".date("d/m/Y")."<time></p>";
 }
 
 ?>
     <h3>Chamada do procedimento</h3>
-    <?=exibirDadosAutor()?>
+    <?php
+    $valor = 1500;
+    if($valor > 1000){
+        exibirDadosAutor();
+    }
+    ?>
+
+    <h3>Outras chamadas</h3>
+    <div><?=exibirDadosAutor()?></div>
+    <ul>
+        <li><?=exibirDadosAutor()?></li>
+        <li><b><?=exibirDadosAutor()?></b></li>
+    </ul>
 
         <hr>
     </div>    

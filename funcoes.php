@@ -74,6 +74,18 @@ $resultado3 = somar(1250, 200)
         <p>João Pedro reprovado...</p>
 <?php } ?>  
 
+        <h3>Função com parâmetros opcionais</h3>
+<?php
+/* Parâmetros opcionais possume lagum tipo de atribuição 
+   com um valor alternativo para o caso de não serem passados na chamada 
+   da função. Obs.: sempre devem estar por último na relação dos parâmetros da função. */
+function exibirSaudacao($mensagem, $pessoa = ""){
+    return "Olá, $mensagem $pessoa";
+}        
+?>
+        <p>Mensagem 1: <?=exibirSaudacao("bom dia", "João Pedro")?> </p>
+        <p>Mensagem 2: <?=exibirSaudacao("boa tarde")?> </p>
+
     </div>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -100,7 +100,7 @@ function verificarNegativo(int $valor):string {
         return "não é negativo";
 
     /* Ao usar Early Return, podemos em alguma situações evitar
-     a necessidade do else (condcional composta). Neste exemplo, se a condição 
+     a necessidade do else (condicional composta). Neste exemplo, se a condição 
      for True o primeiro return é executado. Se não for, na sequência será 
      feito o segundo return. */    
 }

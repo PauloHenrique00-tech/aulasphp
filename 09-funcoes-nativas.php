@@ -136,7 +136,18 @@ $emailCorreto = "tiago@provedor.com.br";
 
 
     <h3>Sanitização</h3>
-    
+<?php
+$ataqueDeRaqui = "<script>
+    document.body.innerHTML = '<h1 style=background:yellow><marquee loop>Sou ráqui 
+    🤬🤬🤬🤬!</marquee></h1>'
+</script>";
+
+//echo $ataquedeRaqui;
+
+$ataqueSanitizado = filter_var($ataqueDeRaqui, FILTER_SANITIZE_SPECIAL_CHARS);
+echo $ataqueSanitizado;
+?>
+
 
 </div>   
 

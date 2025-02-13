@@ -1,4 +1,4 @@
-<?php include "recursos.php"; ?>
+<?php require "recursos.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,6 +11,7 @@
     <div class="container">
         <h1>Modularização e Inclusão de Recursos</h1>
         <hr>
+        <!-- Acessando a constante -->
         <h2> <?=ESCOLA?> </h2>
         <!-- Acessando a variável -->
         <p>Estamos fazendo o curso de <?=$curso?> </p>
@@ -29,7 +30,8 @@
 
         <article>
             <h2>Título qualquer...</h2>
-            <?php include "textos.html"; ?>
+            <?php include "textos.php"; ?>
+            <?php include "textos.php"; ?>
         </article>
     </div>
     

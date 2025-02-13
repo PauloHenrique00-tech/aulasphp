@@ -82,7 +82,61 @@ extract($aluno);
             <li>Idade: <?=$idade?> anos.</li>
         </ul>
 
+    <hr>
 
+    <h3><code>array_sum()</code></h3>
+    <p>Somar valores de um array numérico</p>
+
+<?php
+$valores = [10, 20, 50, 1000, 500];
+$total = array_sum($valores);    
+?>
+        <p>Soma dos valores do array: <b><?=$total?></b></p>
+
+        <hr>
+
+        <h3><code>array_unique()</code></h3>
+        <p>Retorna um novo array com dados <b>únicos</b></p>
+     
+<?php
+$produtos = ["TV", "Notebook", "TV", "Geladeira", "Monitor", "Mouse", "Notebook", "Webcam"
+];
+
+$produtosUnicos = array_unique($produtos);
+?>
+
+    <pre><?=var_dump($produtos)?></pre>
+    <pre><?=var_dump($produtosUnicos)?></pre>
+
+    <hr>
+
+    <h2>Numéricas</h2>
+    <h3><code>min(), max(), round()</code></h3>
+
+<?php
+// Vamos usar o mesmo array de valores criado mais acima...
+$valorQualquer = 1259.75;
+?>
+        <p>Menor valor: <?=min($valores)?></p>
+        <p>Maior valor: <?=max($valores)?></p>
+        <p>Arredondamento: <?=round($valorQualquer)?></p>
+
+        <h2>Filtros</h2>
+        <p>Recursos/Funções/Constantes de análise e limpeza de dados aplicados através 
+        das funções <code>filter_var()</code> e <code>filter_input()</code></p>
+
+        <h3>Validação</h3>
+<?php
+// Exemplo de email estruturado erroneamente
+$emailErrado = "tiago.com.br";
+$emailCorreto = "tiago@provedor.com.br";
+?>
+    <p><?=var_dump(filter_var($emailErrado, FILTER_VALIDATE_EMAIL) )?></p>
+    <p><?=var_dump(filter_var($emailCorreto, FILTER_VALIDATE_EMAIL) )?></p>
+
+
+    <h3>Sanitização</h3>
+    
 
 </div>   
 

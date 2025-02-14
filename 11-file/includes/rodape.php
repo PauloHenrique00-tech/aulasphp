@@ -3,6 +3,7 @@
  <?php //date_default_timezone_set("America/Sao_Paulo");  // Define o fuso horário do Brasil
 // $dataHora = date("d/m/Y H:i:s");?> 
 
+
 <?php
 // Definir o locale como 'pt_BR' (português do Brasil)
 setlocale(LC_TIME, 'pt_BR.UTF-8');

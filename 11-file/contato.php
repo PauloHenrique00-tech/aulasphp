@@ -29,8 +29,6 @@
 
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-</div>
-
-            
+</div>         
 
 <?php include "includes/rodape.php"; ?>
